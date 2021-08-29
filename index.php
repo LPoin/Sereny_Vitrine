@@ -42,6 +42,8 @@
                         <a class="nav-item nav-link" href="quiSuisJe.html">Qui suis-je ?</a>
                         <a class="nav-item nav-link" href="programmeMois.html">Programme du mois</a>
                         <a class="nav-item nav-link" href="partenariats.html">Partenariats</a>
+                        <a class="nav-item nav-link" href="telechargements.html">Téléchargements</a>
+
                     </div>
                 </div>
             </nav>
@@ -51,7 +53,7 @@
                 <h1 class="vertClair m-5">SERENY.ORG</h1>
             </div>
 
-            <video width="100%" height="100%" src="vid/video_accueil.mp4" autoplay loop></video>
+            <video width="100%" height="100%" src="vid/video_accueil.mp4" muted autoplay loop></video>
 
             <section class="my-5">
                 <p>
@@ -69,8 +71,9 @@
                     <br>
                     Sereny Family est arrivée par la suite : lors d’atelier, on me questionnait souvent sur l’éducation,
                     le sommeil, les émotions… une fois de plus, je me suis rendu compte qu’on se sentait seul en tant
-                    que parent et le « parent parfait » des réseaux sociaux n’aide pas … <br> 
-                    Nous savons aujourd’hui, grâce aux neurosciences, qu’une éducation bienveillante, respectueuse et non permissive permet à l’enfant
+                    que parent et le « parent parfait » des réseaux sociaux n’aide pas … <br>
+                    Nous savons aujourd’hui, grâce aux neurosciences, qu’une éducation bienveillante, respectueuse et
+                    non permissive permet à l’enfant
                     de s’épanouir tout en respectant son développement mais c’est difficile quand on n’a pas les outils
                     ni les connaissances. <br> Sereny Family accompagne les parents face aux difficultés qu’ils peuvent
                     rencontrer (sommeil, désobéissance, tempêtes émotionnelles…) par des coachings ou des ateliers
@@ -142,8 +145,12 @@
                     <p id="copyright">Copyright&copy; Bertille Poincelet <?= date('Y'); ?></p>
                 </div>
                 <div class="d-flex ml-auto CGdesktop">
-                    <a href="rgpd/mentions.php"><p id="mentions">mentions légales</p></a> - 
-                    <a href="rgpd/cgu.php"><p id="cgu">CGU</p></a>
+                    <a href="rgpd/mentions.php">
+                        <p id="mentions">mentions légales</p>
+                    </a> -
+                    <a href="rgpd/cgu.php">
+                        <p id="cgu">CGU</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -159,9 +166,18 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-    <script> window.start.init({Palette:"palette1",Mode:"floating left",Theme:"block",
-    Message:"Ce site utilise les cookies pour vous procurer la meilleure expérience de navigation possible.",
-    ButtonText:"Ca marche !",LinkText:"En savoir plus",Location:"https://www.sereny.org/rgpd/cgu.php",Time:"2",})</script>
+    <script>
+    window.start.init({
+        Palette: "palette1",
+        Mode: "floating left",
+        Theme: "block",
+        Message: "Ce site utilise les cookies pour vous procurer la meilleure expérience de navigation possible.",
+        ButtonText: "Ca marche !",
+        LinkText: "En savoir plus",
+        Location: "https://www.sereny.org/rgpd/cgu.php",
+        Time: "2",
+    })
+    </script>
 </body>
 
 </html>
